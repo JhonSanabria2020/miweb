@@ -5,3 +5,4 @@ Objetivos:
 4. permitir controlar los prestamos y los intereces
 5. permite pagos Nequi
 6. permite recordatorios de pagos
+7. ver historicos de usuriao
