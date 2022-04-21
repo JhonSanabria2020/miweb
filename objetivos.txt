@@ -1,0 +1,6 @@
+Objetivos:
+1. permitir el control de pagos de los usuarios
+2. permitir un status en tiempo de real de los estarctos de un usuario
+3. permitir agregar o retirar usuarios
+4. permitir controlar los prestamos y los intereces
+5. permite pagos Nequi
