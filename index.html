@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de la pestaña donde se abre la pagina Web-->
     <title>NAF</title>
+    <!--Imagen de la pestaña donde se abre la pagina web-->
     <link rel="icon" href="imagenes/wallet_3.png" type="image/png" />
+    <!--Estilo temporal de tabla, mientras se usan estilos CSS-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,6 +22,69 @@
     <main>
         <h2>Saludo</h2>
         <p>Bienvenido a su ahorro familiar, renovado y Digital</p>
+        <!--Ejemplo de Listas ordenadas(OL) y no ordenadas(UL)-->
+        <h4>Reglamentacion NAF</h4>
+        <ol>
+            <li>Capitulo 1 Aporte</li>
+            <ol>
+                <!--Estilo de numeracion en listas-->
+                <li style="list-style-type: upper-roman;">Titulo 1 Aporte Inicial</li>
+                <!--Uso de (blockquote) para añadir un parrafo identado + Estilo de alineado justificado-->
+                <blockquote style="text-align:justify">Este aporte se define como el monto inicial que debe pagarce de manera unica como nuevo ahorrador para hacer parte del NAF, mismo que hace parte de su ahorro y que esta definido por concenso desde el año 2022, por un monto de $1.000.000 (COP), (Un Millon de pesos moneda corriente Colombiana)</blockquote>
+                <li style="list-style-type: upper-roman;">Titulo 2 Aporte Mensual</li>
+                <li style="list-style-type: upper-roman;">Titulo 3 Aporte Extraordinario</li>
+            </ol>
+            <li>Capitulo 2 Encargados y Roles</li>
+            <ol>
+                <!--(a1)Creacion de (id) para hacer hipervinculo desde otro lugar de la pagina web-->
+                <li id="encargados" style="list-style-type: upper-roman;">Titulo 1 Encargados oficiales</li>
+                <!--Creacion de una tabla con estilo para indicar su area-->
+                <table style="width: 600px;">
+                    <!--Etiqueta (thead) para grupar los elementos de la cabecera en la tabla-->
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Nombre</th>
+                            <th>Contacto</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+                    <!--Etiqueta (tbody) para grupar los elementos de las filas en la tabla-->
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Deisy</td>
+                            <td>+57 311 2345366</td>
+                            <td>Administrador</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Andrea</td>
+                            <td>+57 322 1234567</td>
+                            <td>Administrador Suplente</td>
+                        </tr>
+                    </tbody>
+                    <!--Se puede usar la etiqueta (tfooter) para grupar elementos del pie de tabla-->
+                </table>
+                <li style="list-style-type: upper-roman;">Titulo 2 Roles</li>
+                <li style="list-style-type: upper-roman;">Titulo 3 Contactos</li>
+            </ol>
+        </ol>
+        <h4>Actas de reunion</h4>
+        <ul>
+            <li>Integrantes nuevos</li>
+            <li>Retiro de integrantes</li>
+            <li>Liquidacion de integrantes</li>
+            <!--(a1)Lista con hipervinculo a un (id) de la pagina web-->
+            <li><a href="#encargados">Encargados oficiales</a></li>
+        </ul>
+        <!--Implementacion de Formularios-->
+        <form>
+            <!--Incluir campo de referencia usando (id) y (for)-->
+            <label for="fecha">Seleccione mes de consulta</label>
+            <!--Propiedad (name) para usarla como atributo llave/valor y propiedad (placeholder) para indicar el tipo de dato que se solicita en el formulario-->
+            <input id="fecha" name="mes" placeholder="mes"/>
+        </form>
     </main>
     <footer>
         <img src="imagenes/whatsapp_1.png" alt="Logo Whatsapp" width="30" />
