@@ -23,7 +23,7 @@
         <h2>Saludo</h2>
         <p>Bienvenido a su ahorro familiar, renovado y Digital</p>
         <!--Ejemplo de Listas ordenadas(OL) y no ordenadas(UL)-->
-        <h4>Reglamentacion NAF</h4>
+        <h4>Reglamentacion NAF (listas)</h4>
         <ol>
             <li>Capitulo 1 Aporte</li>
             <ol>
@@ -34,7 +34,7 @@
                 <li style="list-style-type: upper-roman;">Titulo 2 Aporte Mensual</li>
                 <li style="list-style-type: upper-roman;">Titulo 3 Aporte Extraordinario</li>
             </ol>
-            <li>Capitulo 2 Encargados y Roles</li>
+            <li>Capitulo 2 Encargados y Roles (Tablas)</li>
             <ol>
                 <!--(a1)Creacion de (id) para hacer hipervinculo desde otro lugar de la pagina web-->
                 <li id="encargados" style="list-style-type: upper-roman;">Titulo 1 Encargados oficiales</li>
@@ -70,7 +70,7 @@
                 <li style="list-style-type: upper-roman;">Titulo 3 Contactos</li>
             </ol>
         </ol>
-        <h4>Actas de reunion</h4>
+        <h4>Actas de reunion (Listas)</h4>
         <ul>
             <li>Integrantes nuevos</li>
             <li>Retiro de integrantes</li>
@@ -79,11 +79,24 @@
             <li><a href="#encargados">Encargados oficiales</a></li>
         </ul>
         <!--Implementacion de Formularios-->
+        <h4>Formulario</h4>
         <form>
             <!--Incluir campo de referencia usando (id) y (for)-->
             <label for="fecha">Seleccione mes de consulta</label>
-            <!--Propiedad (name) para usarla como atributo llave/valor y propiedad (placeholder) para indicar el tipo de dato que se solicita en el formulario-->
+            <!--Propiedad (name) para usarla como atributo llave/valor y propiedad (placeholder) para indicar el tipo de dato que se solicita en el formulario, explorar opciones de (type) para mas opciones como (Archivo, texto, email, password, radio, checkbox)-->
             <input id="fecha" name="mes" placeholder="mes"/>
+            <!--Saltos de linea com (br) para dar espacio entre campos del formulario-->
+            <br>
+            <label for="check">Seleccione este campo</label>
+            <input type="checkbox" id="check" name="revision"/>
+            <br>
+            <!--uso de (textarea) para cuadros de comentarios-->
+            <label for="comentarios">Comentarios</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Descripcion/Mensaje"></textarea>
+            <br>
+            <!--uso de (<input type="submit" />) como boton de envio de un formulario que tiene el problema de no ser personalizable por esto se puede usar tambien (button) explorar los type, eh imagen-->
+            <button type="reset">Enviar</button>
         </form>
     </main>
     <footer>
