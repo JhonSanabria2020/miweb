@@ -1,0 +1,78 @@
+/*Estilo de Tablas*/
+.tabla, .encabezado_tabla, .contenido_tabla {
+    border: 1px solid black;
+}
+
+/*Estilos para barra menu principal*/
+.menu_inicio {
+    transition: box-shadow 0.3s ease;
+    background-color: greenyellow;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    border: 1px black solid;
+    margin: 2px;
+    line-height: 15px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+/*Estilo flex para organizar los elelmento de un contenedor*/
+.contenedor_menu_inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo_pagina{
+    color: black;
+    font-style: normal;
+    margin: 20px;
+    text-align: start;
+}
+
+.menu_inicio:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(3, 48, 3, 0.5);
+    background-color: rgb(238, 241, 50);
+}
+
+/*Estilos boostrap para Responsive Ejemplo solo modificando el color*/
+/*X-Small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .menu_inicio {
+        background-color: blueviolet;
+        width: 210px;
+        font-size: 12px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .menu_inicio {
+        background-color: rgb(146, 9, 39);
+        width: 250px;
+        font-size: 15px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .menu_inicio {
+        background-color: yellowgreen;
+        width: 270px;
+        font-size: 17px;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .menu_inicio {
+        background-color: rgb(233, 154, 36);
+        width: 340px;
+        font-size: 19px;
+    }
+}
