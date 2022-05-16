@@ -39,10 +39,13 @@
 
 /*Estilo caja para prueba javascript*/
 .caja {
-    background-color: aquamarine;
+    background-color: gainsboro;
     width: 300px;
     height: 300px;
+    padding-left: 10px;
 }
+
+
 /*Estilos boostrap para Responsive Ejemplo solo modificando el color*/
 /*X-Small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/
@@ -82,5 +85,6 @@
         font-size: 19px;
     }
 }
+
 
 

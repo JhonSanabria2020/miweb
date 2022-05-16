@@ -9,8 +9,10 @@ function grafico (){
 
         for (let j = 1; j <= i; ++j){
             arbol += '* ';
+            
         }
-        document.getElementById('caja').innerHTML = arbol;
+        arbol += '<br>';
+        document.getElementById('caja').innerHTML += arbol;
     }
    
 }
