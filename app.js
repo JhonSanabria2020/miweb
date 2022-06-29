@@ -35,6 +35,7 @@ const traerTextoBusqueda = () => {
 const llamadaApi = async (valorTextoBuscar) => {
     const resultadoLlamada = await fetch('https://gateway.marvel.com:443/v1/public/characters?name='+valorTextoBuscar+'&ts=1&apikey=4f16045bf4fdd0a2d87d5bdbeb497f8c&hash=cac805bbdb216a6580c1177d1a13a6ef');
     const resultadoJson = await resultadoLlamada.json();
+
     const personaje = resultadoJson.data.results[0]['name'];
     const url_imagen = resultadoJson.data.results[0].thumbnail['path'];
     const url_extension = resultadoJson.data.results[0].thumbnail['extension'];
@@ -54,4 +55,5 @@ hash: CAC805BBDB216A6580C1177D1A13A6EF
 ts:1
 URL_principal: https://gateway.marvel.com/v1/public/characters?ts=1&apikey=4f16045bf4fdd0a2d87d5bdbeb497f8c&hash=cac805bbdb216a6580c1177d1a13a6ef
 URL_busqueda_Name: https://gateway.marvel.com:443/v1/public/characters?name=3-D%20Man&ts=1&apikey=4f16045bf4fdd0a2d87d5bdbeb497f8c&hash=cac805bbdb216a6580c1177d1a13a6ef
+Algunos Personajes con Imagen: 3-D Man, A-Bomb (HAS), A.I.M., Abomination (Emil Blonsky), Absorbing Man, Abyss, Abyss (Age of Apocalypse), Adam Warlock, Aegis (trey Rollins), Agatha Harkness, Agent Brand, Agent Zero, Agents of Atlas.
 */

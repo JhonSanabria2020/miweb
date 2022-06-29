@@ -1,0 +1,7 @@
+Salir de una rama y crear una nueva (git checkout -b {Nombre de Rama})
+Estatus (git status)
+Añadir cambios al backstage
+    Todos los cambios (git add *)
+    Algunos cambios (git add {Nombre de archivo})
+Hacer Commit (git commit -m "{Mensaje descriptivo del commit}")
+Enviar a Github creando nueva rama (git push -u origin {Nueva Rama})
